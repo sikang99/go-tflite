@@ -179,8 +179,9 @@ func sigmoid(x float32) float32 {
 
 func main() {
 	var model_path, image_path string
-	flag.StringVar(&model_path, "model", "multi_person_mobilenet_v1_075_float.tflite", "path to model file")
-	flag.StringVar(&image_path, "image", "aa.png", "path to image file")
+	// flag.StringVar(&model_path, "model", "multi_person_mobilenet_v1_075_float.tflite", "path to model file")
+	flag.StringVar(&model_path, "model", "posenet_mobilenet_v1_100_257x257_multi_kpt_stripped.tflite", "path to model file")
+	flag.StringVar(&image_path, "image", "yoga.jpg", "path to image file")
 	flag.Parse()
 
 	f, err := os.Open(image_path)
@@ -318,7 +319,7 @@ func main() {
 		gc.Close()
 	}
 
-	err = draw2dimg.SaveToPngFile("output.png", canvas)
+	err = draw2dimg.SaveToPngFile("output.jpg", canvas)
 	if err != nil {
 		log.Println(err)
 	}
