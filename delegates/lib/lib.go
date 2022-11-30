@@ -37,7 +37,7 @@ import (
 	"unsafe"
 
 	"github.com/coreos/pkg/dlopen"
-	"github.com/mattn/go-tflite/delegates"
+	"github.com/sikang99/go-tflite/delegates"
 )
 
 // LibDelegate implement Delegater

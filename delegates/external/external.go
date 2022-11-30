@@ -13,7 +13,7 @@ import (
 	"errors"
 	"unsafe"
 
-	"github.com/mattn/go-tflite/delegates"
+	"github.com/sikang99/go-tflite/delegates"
 )
 
 type DelegateOptions struct {
