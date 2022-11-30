@@ -4,6 +4,7 @@ package tflite
 #ifndef GO_TFLITE_H
 #include "tflite.go.h"
 #endif
+#cgo CFLAGS: -I./include
 #cgo LDFLAGS: -ltensorflowlite_c
 #cgo android LDFLAGS: -ldl
 #cgo linux,!android LDFLAGS: -ldl -lrt
@@ -14,7 +15,7 @@ import (
 	"unsafe"
 
 	"github.com/mattn/go-pointer"
-	"github.com/mattn/go-tflite/delegates"
+	"github.com/sikang99/go-tflite/delegates"
 )
 
 //go:generate stringer -type TensorType,Status -output type_string.go .
