@@ -304,7 +304,7 @@ func main() {
 			})
 		}
 		faces = omitFaces(faces)
-		fmt.Println(len(faces))
+		// fmt.Println(len(faces))
 
 		for _, face := range faces {
 			gocv.Rectangle(&result.mat, image.Rect(
@@ -330,7 +330,7 @@ func main() {
 		frames++
 		select {
 		case <-second:
-			window.SetWindowTitle(fmt.Sprintf("SSD | FPS: %d", frames))
+			window.SetWindowTitle(fmt.Sprintf("SSD [ FPS: %d, Faces: %d ]", frames, len(faces)))
 			frames = 0
 		default:
 		}
