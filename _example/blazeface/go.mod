@@ -1,10 +1,10 @@
-module github.com/mattn/go-tflite/_example/blazeface
+module github.com/sikang99/go-tflite/_example/blazeface
 
 go 1.13
 
-replace github.com/mattn/go-tflite => ../..
+replace github.com/sikang99/go-tflite => ../..
 
 require (
-	github.com/mattn/go-tflite v0.0.0-00010101000000-000000000000
+	github.com/sikang99/go-tflite v0.0.0-20221130141150-c156e371e3d5
 	gocv.io/x/gocv v0.29.0
 )
