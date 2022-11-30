@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mattn/go-tflite"
+	"github.com/sikang99/go-tflite"
 )
 
 func bin(n int, num_digits int) []float32 {
