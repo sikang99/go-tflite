@@ -11,6 +11,8 @@ $ cd $srctree/tensorflow
 $ cmake $srctree/tensorflow/lite/c/
 $ make 
 ```
-3. copy $srctree/tensorflow/libtensorflowlite_c.dylib /usr/local/lib
-
+3. copy tensorflow lite library to the library search folder
+```
+$ cp $srctree/tensorflow/libtensorflowlite_c.dylib /usr/local/lib
+```
 
