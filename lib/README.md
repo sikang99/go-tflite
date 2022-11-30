@@ -1,7 +1,7 @@
 # Build & Install procedure
 
 1. Download [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
-2. Compile tensorflow and its ite
+2. Compile tensorflow and its lite version on your platform
 ```
 $ cd $srctree
 $ ./configure
