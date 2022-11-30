@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mattn/go-tflite"
-	"github.com/mattn/go-tflite/delegates/edgetpu"
+	"github.com/sikang99/go-tflite"
+	"github.com/sikang99/go-tflite/delegates/edgetpu"
 	"golang.org/x/image/colornames"
 
 	"gocv.io/x/gocv"
